@@ -3,6 +3,10 @@
 *{box-sizing:border-box}body{margin:0;background:#f4f1ea;color:#19253c;font:15px/1.45 system-ui,sans-serif}main{max-width:1500px;margin:auto;padding:20px}h1{margin:0;font-size:28px}p{margin:9px 0 14px}.bar{background:#f4f1ea;position:sticky;top:0;z-index:2;padding:8px 0;display:flex;gap:8px;flex-wrap:wrap}input,select,.action{background:#fff;color:#19253c;border:1px solid #aeb6c2;padding:8px;border-radius:7px;font:inherit}input{flex:1;min-width:160px}select{max-width:100%}.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(135px,1fr))}.tile{border-radius:8px;background:white;overflow:hidden;box-shadow:0 1px 4px #15223a26}.tile img,.placeholder{width:100%;aspect-ratio:4/5;object-fit:contain;background:#e6e8eb;display:block}.tile p{margin:6px 8px;font-size:13px}.tile small{display:block;margin:0 8px 8px;color:#46546c;overflow-wrap:anywhere}a{color:#143c74}.warn{color:#9a211b!important}
 </style></head><body><main><h1>ETF 만화 인수인계 보드</h1><p id="summary"></p><p>이미지를 누르면 확대용 이미지가 열립니다. PNG 원본은 폴더에 있는 ZIP으로 받을 수 있습니다.</p>
 <div class="bar"><input id="query" type="search" placeholder="제목·파일명 검색" aria-label="제목·파일명 검색"><select id="group" aria-label="묶음"><option value="">전체 묶음</option><option value="trusta">TRUSTA 전체</option></select><a class="action" href="./inventory.csv" download>파일 목록 CSV</a><a class="action" href="https://github.com/geben147-create/etf-comics-handoff/blob/main/prompts.md">프롬프트 펼쳐 보기</a></div>
+<details><summary>ETF 음성·영상 재생</summary>
+<p>ETF 도입 해설 음성</p><audio controls preload="none" src="media/etf-intro.mp3"></audio>
+<p>ETF 도입 영상</p><video controls preload="none" width="420" style="max-width:100%" src="media/etf-intro.mp4"></video>
+<p>ETF 순매수 시각화 영상</p><video controls preload="none" width="420" style="max-width:100%" src="media/etf-top10.mp4"></video></details>
 <p id="visible" aria-live="polite"></p><div class="grid" id="grid"></div></main>
 <script src="cards.js"></script><script>
 const q=document.querySelector('#query'), group=document.querySelector('#group'), grid=document.querySelector('#grid');

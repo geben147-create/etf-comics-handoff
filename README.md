@@ -6,6 +6,8 @@
 
 원본 PNG는 [Releases](https://github.com/geben147-create/etf-comics-handoff/releases/tag/originals)에서 두 묶음으로 받을 수 있습니다. 바둑판에서 카드를 클릭하면 확대용 이미지가 열립니다.
 
+[공개 바둑판과 미디어 플레이어](https://geben147-create.github.io/etf-comics-handoff/)
+
 ## 바둑판
 
 - [ETF 만화 1–50](gallery/numbered-01.md)
